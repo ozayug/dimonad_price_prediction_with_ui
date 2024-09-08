@@ -1,0 +1,25 @@
+Title=Diamond Price Prediction
+Data Flow Diagram:-
+*Importing Libraries(modules)
+	->numpy  
+	->pandas  
+	->seaborn 
+	->pandas profilling
+	->matplotlib 
+	->sklearn
+		=>preprocessing
+		=>model_selection
+		=>linear_model
+		=>metrics
+*Loading Data
+*Data cleaning
+*Exploratory Data Analysis(EDA)
+	->Visualisation=Matplolib & Seaborn
+	->Pandas Profilling
+*Data Processing
+	->Steps involved in Data Preprocessing
+		=>Encoding categorical variables = LabelEncoder, OneHotEncoder
+*Model Selection
+	->Model= Linear Regression
+*Model Traninng	
+	->Training= MSE,MAE,RMSE
