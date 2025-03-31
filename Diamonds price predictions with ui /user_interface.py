@@ -19,7 +19,7 @@ encoded_features = Ohe.fit_transform(df[['cut']])
 new_columns = Ohe.get_feature_names_out(['cut'])
 df_encoded = pd.DataFrame(encoded_features, columns=new_columns)
 df = pd.concat([df, df_encoded], axis=1)
-df.drop(columns='cut', axis=1, inplace=True)
+df.drop(columns='cut', axis=1, inplace=True)clear
 
 # Extract features (X) and target variable (y)
 X = df[['carat', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z', 'cut_Good', 'cut_Ideal', 'cut_Premium', 'cut_Very Good']]
