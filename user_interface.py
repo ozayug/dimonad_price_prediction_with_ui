@@ -39,7 +39,6 @@ model.fit(X_train, y_train)
 
 # Streamlit App
 st.title("Diamond Price Predictor")
-
 # Input fields
 carat = st.number_input("Carat", value=0.0)
 color = st.number_input("Color (encoded)", value=0)
@@ -60,3 +59,5 @@ if st.button("Predict Price"):
     input_features_scaled = scaler.transform(input_features)
     prediction = model.predict(input_features_scaled)
     st.success(f"Predicted Price: ${prediction[0]:.2f}")
+st.markdown("---")
+st.markdown("**Developed By :- Manthan Makani & Yug Oza")
