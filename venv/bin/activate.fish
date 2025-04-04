@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/apple/Desktop/Study/Github/dimonad_price_prediction_with_ui/venv"
+set -gx VIRTUAL_ENV "/Users/apple/Desktop/Study/Github/dimonad_price_prediction_with_ui/Diamonds price predictions with ui /venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
