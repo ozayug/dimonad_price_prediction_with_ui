@@ -237,7 +237,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 # %%
 Le = LabelEncoder()
-Ohe = OneHotEncoder(sparse=False, drop='first')
+Ohe = OneHotEncoder(sparse_output=False, drop='first')
 
 # %% [markdown]
 # # LabelEncoder
@@ -329,7 +329,6 @@ from sklearn.model_selection import train_test_split
 
 # %%
 x_train,x_test,y_train,y_test = train_test_split(df.drop('carat',axis=1),df['carat'],test_size=0.2)
-#Creating x_train,x_test,y_train and y_test we will set test_size = 0.2 so 20% of the actual data will be used as test data
 
 # %%
 df.head()
@@ -483,7 +482,23 @@ print(np.sqrt(mean_squared_error(y_test,y_hat)))
 # %% [markdown]
 # <font color =' Green'>In conclusion, the "Diamonds Price Prediction" project utilizes machine learning to accurately forecast diamond prices. By analyzing a comprehensive dataset and employing advanced algorithms, the project empowers stakeholders with data-driven decision-making, enhancing transparency and efficiency in the diamond market. Real-time predictions enable informed transactions, benefiting buyers, sellers, and investors.</font>
 
+# %%
+import joblib
+
+# Linear Regression model save
+joblib.dump(Lr, 'model.pkl')
+
+# RobustScaler save
+joblib.dump(Rb, 'scaler.pkl')
+
+
 # %% [markdown]
 # <font color='Brown'>***Thank you...***</font>
+
+# %%
+
+
+# %%
+
 
 
